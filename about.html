@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timilehin Adedeji</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ <section>
+<style >
+ body {
+      margin: 0%;
+    }
+
+    .content {
+      height: 100vh;
+      height: 100dvh;
+      width: 100vw;
+      background-color: #0f1d31;
+      padding-bottom: 4%;
+      overflow-y: auto;
+    }
+
+    .heading {
+      color: #cccccc;
+      text-shadow: 0 0 10px #00ffff;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      text-align: center;
+      font-family: "Macondo", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2.5rem;
+      padding-top: 3rem;
+    }
+
+    .flex-content {
+      padding: 2.5rem;
+    }
+
+    .profile {
+    float: right;
+    width: clamp(150px, 40dvw, 300px);
+    height: auto;
+    padding-right: 2rem;
+    margin-left: 1rem;
+}
+
+.p {
+  font-size: 1.8vw;
+} 
+
+
+
+
+
+@media (max-width: 1024px) {
+.p{
+  font-size: 3vw;
+}
+}
+
+@media (max-width: 820px) {
+.p{
+  font-size: 3vw;
+}
+ }
+
+@media (max-width: 768px) {
+.p{
+  font-size: 3vw;
+}
+ }
+
+ @media (max-width: 480px) {
+.p{
+  font-size: 5vw;
+}
+ }
+
+ 
+ .navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1000;
+    background-color:transparent !important; /* deep dark navy */
+
+  }
+
+  /* Nav brand (logo/text) styling */
+  .navbar .navbar-brand {
+    color: #00f7ff; /* neon blue */
+    font-weight: bold;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+  }
+
+  .navbar .navbar-brand:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px red, 0 0 20px red;
+  }
+
+  /* Nav links default */
+  .navbar .nav-link {
+    color: #00f7ff;
+    text-shadow: 0 0 5px #00f7ff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  /* Nav links on hover */
+  .navbar .nav-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #00f7ff;
+  }
+
+  /* Active link */
+  .navbar .nav-link.active {
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 25px #00f7ff;
+  }
+
+
+
+
+  /* Custom toggler (hamburger icon) */
+  .navbar-toggler {
+    border-color: #00f7ff;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 247, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Collapse menu background on mobile */
+  .navbar-collapse {
+    background-color:transparent;
+  }
+
+</style>
+<section>
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container-fluid">
+     <a class="navbar-brand"><img src="./images/logotransparent.png" height="45dvh" alt="logo"></a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- CHANGED: Added 'justify-content-end' to push nav items to the right -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+  
+        <!-- CHANGED: Removed duplicate 'ms-auto', cleaned classes for responsiveness -->
+        <ul class="navbar-nav d-flex flex-column flex-lg-row align-items-lg-center text-end">
+  
+          <!-- CHANGED: Fixed invalid extra <a> tag and updated spacing class to 'me-lg-3' for large screens -->
+          <li class="nav-item me-lg-3">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+  
+          <li class="nav-item me-lg-3">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+  
+          <li class="nav-item me-lg-3">
+            <a class="nav-link"  href="works.html">Works</a>
+          </li>
+  
+          <!-- CHANGED: No margin-end here to avoid uneven spacing at the far right -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+ <section>
+      <div class="content">
+         
+      
+
+          <h1 class="heading">About Me</h1>
+           <div class="flex-content">
+            <img class="profile" src="./images/me.png" alt="Timilehin">
+             <p class="p">
+              Hey, I’m Timilehin, a young Nigerian who’s having a lot of fun building for the web. I’ve been on this journey for just about six months, diving into HTML, CSS, and JavaScript to bring ideas to life. Whether it’s a landing page, a portfolio, or a mini game, I’m always aiming to create smooth, responsive, and visually clean experiences that work well across devices.
+
+              I am someone who is always willing to learn new skills and I got curious about web development, gave it a shot, and got hooked. There’s just something satisfying about writing code that turns into a real, usable website. Every project teaches me something new  ,and I’m always down to learn more.
+              
+              I’m not a pro yet infact far from it, but I’m consistent, curious, and genuinely passionate about growing. I’ve even started thinking about diving into backend development, just to expand what I can build.
+              
+              When I’m not coding, you’ll probably find me on a football pitch , either scoring a goal or setting someone else up for one. And when I’m not doing that, I’m gaming, hanging out, or just unwinding. It’s all about learning, having fun, and enjoying the process.
+              
+             </p>
+            </div>
+          
+      </div>
+
+
+
+ </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+ <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
